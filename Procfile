@@ -1,1 +1,1 @@
-worker: python Sudos.py
+worker: python sudos.py

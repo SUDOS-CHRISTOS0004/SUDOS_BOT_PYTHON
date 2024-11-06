@@ -3,7 +3,7 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Mess
 import os
 
 # Remplace par le token de ton bot
-TOKEN = os.getenv("8137327146:AAFwD3DaQTZ7R7uJUeSKD3m4qJKWgArcCDY")
+TOKEN = os.getenv("7569276552:AAHoTt8G8zdY5Amc2WkncVMPmUz-eGmCNmQ")
 
 # Liste des administrateurs autorisés (remplace avec ton ID Telegram)
 ADMIN_IDS = [6616189804]  # Remplace par ton propre ID Telegram ou ceux des autres admins

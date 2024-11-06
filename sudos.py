@@ -1,22 +1,30 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes, ConversationHandler
 import os
+from dotenv import load_dotenv
 
-# Remplace par le token de ton bot
+# Charger les variables d'environnement depuis un fichier .env (si utilisé en local)
+load_dotenv()
+
+# Remplacer par la variable d'environnement qui contient le token
 TOKEN = os.getenv("7569276552:AAHoTt8G8zdY5Amc2WkncVMPmUz-eGmCNmQ")
+
+# Vérifier si le token est bien récupéré
+if TOKEN is None:
+    raise ValueError("Le token n'a pas été trouvé dans les variables d'environnement.")
 
 # Liste des administrateurs autorisés (remplace avec ton ID Telegram)
 ADMIN_IDS = [6616189804]  # Remplace par ton propre ID Telegram ou ceux des autres admins
 
 # Dictionnaires pour stocker les options et messages personnalisés
 options_personnalisees = {
-  1: "𝐀𝐃𝐌𝐈𝐍 😇💫✌️",
+    1: "𝐀𝐃𝐌𝐈𝐍 😇💫✌️",
     2: "𝐃𝐀𝐑𝐊 𝐖𝐄𝐁 😳",
     3: "𝐇𝐀𝐂𝐊 𝐖𝐈𝐅𝐈 𝐌𝐄𝐓𝐇𝐎𝐃𝐄 😊",
     4: "𝐇𝐀𝐂𝐊 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐐𝐑 💫",
     5: "𝐂𝐎𝐍𝐓𝐀𝐂𝐓 𝐌𝐄 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 🗣️",
     6: "𝐈𝐍𝐒𝐓𝐀𝐋𝐋𝐀𝐓𝐈𝐎𝐍 𝐃𝐄 𝐊𝐀𝐋𝐈 𝐋𝐈𝐍𝐔𝐗 ⚡🔥",
-    7: "𝐔𝐍𝐁𝐀𝐍 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏𝐏 🤩😋",
+    7: "𝐔𝐍𝐁𝐀𝐍 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 🤩😋",
     8: "𝐁𝐀𝐍 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐌𝐄𝐓𝐇𝐎𝐃𝐄 ✌️🤫",
     9: "𝐒𝐔𝐏𝐏𝐎𝐑𝐓 😯🔰",
     10: "𝐇𝐓𝐌𝐋/𝐂𝐒𝐒 𝐋𝐈𝐄𝐍 𝐓𝐎𝐔𝐒 𝐄𝐍 𝐏𝐃𝐅 🏃‍♂️",
@@ -144,7 +152,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 # Configuration du bot
 def main() -> None:
-    application = Application.builder().token(TOKEN).build()
+    application = Application.builder().token(7569276552:AAHoTt8G8zdY5Amc2WkncVMPmUz-eGmCNmQ).build()
 
     # Commande /start
     application.add_handler(CommandHandler("start", start))

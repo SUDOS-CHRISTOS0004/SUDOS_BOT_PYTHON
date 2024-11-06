@@ -1,2 +1,3 @@
-# SUDOS_BOT_PYTHON
+# SUDOS_BOT_PYTHON FOR TÉLÉGRAMMES 
+# DÉVELOPPEUR SUDOS CHRISTOS 
 L'informatique veut être libre !

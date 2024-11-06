@@ -36,21 +36,21 @@ messages_personnalises = {
     2: "Voici la liste des Admins.",
     3: "Voici les informations des Groupes.",
     4: "Besoin d'aide ? Voici les options disponibles.",
-    5: "Accédez aux Paramètres ici."
-    6: "message à écrit ici"
-    7: "message à écrit ici"
-    8: "message à écrit ici"
-    9: "message à écrit ici"
-    10: "message à écrit ici"
-    11: "message à écrit ici"
-    12: "message à écrit ici"
-    13: "message à écrit ici"
-    14: "message à écrit ici"
-    15: "message à écrit ici"
-    16: "message à écrit ici"
-    17: "message à écrit ici"
-    18: "message à écrit ici"
-    19: "message à écrit ici"
+    5: "Accédez aux Paramètres ici.",
+    6: "message à écrit ici",
+    7: "message à écrit ici",
+    8: "message à écrit ici",
+    9: "message à écrit ici",
+    10: "message à écrit ici",
+    11: "message à écrit ici",
+    12: "message à écrit ici",
+    13: "message à écrit ici",
+    14: "message à écrit ici",
+    15: "message à écrit ici",
+    16: "message à écrit ici",
+    17: "message à écrit ici",
+    18: "message à écrit ici",
+    19: "message à écrit ici",
     20: "message à écrit ici"
 }
 

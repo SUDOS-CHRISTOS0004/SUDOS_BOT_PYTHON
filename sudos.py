@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Remplacer par la variable d'environnement qui contient le token
-TOKEN = os.getenv("7569276552:AAHoTt8G8zdY5Amc2WkncVMPmUz-eGmCNmQ")
+TOKEN = os.getenv("TOKEN")
 
 # Vérifier si le token est bien récupéré
 if TOKEN is None:
